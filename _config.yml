@@ -1,0 +1,24 @@
+# Site settings
+title: Knights of the Old Code
+email: curtis@knightsoftheoldcode.com
+description: > # this means to ignore newlines until "baseurl:"
+  Curtis is the author of a few books and an incredibly popular (in his own mind) 
+  developer blog. He works on mind-numbingly huge legacy applications to put steak on
+  the table while his side-gigs recently added salt and pepper shakers.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://knightsoftheoldcode.com" # the base hostname & protocol for your site
+github_username:  knightotoldcode
+twitter_username: knightotoldcode
+
+# Build settings
+markdown: kramdown
+
+permalink: pretty
+    
+exclude: [vendor]
+
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap

@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Fira+Sans|Source+Code+Pro);
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: 'Fira Sans', sans-serif;;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #34282c;
+    background-color: #fdfdfd;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
