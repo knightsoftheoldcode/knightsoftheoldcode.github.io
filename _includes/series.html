@@ -1,0 +1,39 @@
+{% if page.series %}
+    {% assign count = '0' %}
+    {% assign idx = '0' %}
+    {% for post in site.posts reversed %}
+        {% if post.series == page.series %}
+            {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+            {% if post.url == page.url %}
+                {% capture idx %}{{count}}{% endcapture %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">This is article <strong>{{ idx }}</strong> of <strong>{{ count }}</strong> in the "{{page.series}}" series.</h3>
+      </div>
+      <div class="panel-body">
+        <div class="list-group">
+        {% assign count = '0' %}
+        {% for post in site.posts reversed %}
+        {% if post.series == page.series %}
+            {% capture count %}{{ count | plus: '1' }}{% endcapture %}
+            
+            {% if page.url == post.url %}
+                <a href="{{post.url}}" class="list-group-item active">Part {{ count }} - This Article</a>
+            {% else %}
+                <a href="{{post.url}}" class="list-group-item">Part {{ count }} - {{post.title}}</a>
+            {% endif %}
+            
+        {% endif %}
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="seriesNote">
+        <p></p>
+    </div>
+{% endif %}
