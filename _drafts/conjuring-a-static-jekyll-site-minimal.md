@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Conjuring a Static Jekyll Site - A Minimal Viable Product"
-date:   2015-12-21
+title:  "Conjuring a Static Jekyll Site - A Minimal Buildable Product"
+date:   2015-12-22
 description: “Conjuring a Static Website“
 series: conjuring-a-static-jekyll-site
 categories: article
