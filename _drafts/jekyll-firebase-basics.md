@@ -66,7 +66,7 @@ The JSON representation of which looks like:
 }
 {% endhighlight %}
 
-It's also depicted in the Firebse in-browser dashboard.
+It's also depicted in the Firebase in-browser dashboard.
 
 ![For Those About to Edit](/img/firebase-users.png)
 
