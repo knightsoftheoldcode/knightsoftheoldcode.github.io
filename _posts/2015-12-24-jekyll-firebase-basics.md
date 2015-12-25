@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll and Firebase - Getting Started"
+title:  "Jekyll and Firebase - Basics"
 date:   2015-12-24
 description: "Getting started integrating real-time website features with Jekyll and Firebase"
 series: jekyll-and-firebase
