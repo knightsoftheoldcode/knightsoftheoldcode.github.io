@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Jekyll and Firebase - Authentication"
-date:   2015-12-29
+title:  "Jekyll and Firebase - Email / Password Authentication"
+date:   2016-01-09
 description: "Authentication in statically-generated websites with Jekyll and Firebase"
 series: jekyll-and-firebase
 categories: article
@@ -93,7 +93,7 @@ In the Firebase "User Login & Authentication" panel, we see that we can check "E
 
 After enabling the authentication method you should be able to provide accurate values and your user should appear in the dashboard below the password reset configuration.
 
-You should also get a friendly success message beneath the Signup button. Creating a user in Firebase does *not* automatically log a user in. You must manually call the login method (in this example we are asking the user to click a separate button for demonstration purposes, a real-world application would likely just call the login method after getting the all-clear fromFirebase verifying a user account creation).
+You should also get a friendly success message beneath the Signup button. Creating a user in Firebase does *not* automatically log a user in. You must manually call the login method (in this example we are asking the user to click a separate button for demonstration purposes, a real-world application would likely just call the login method after getting the all-clear from Firebase verifying a user account creation).
 
 ```/js/main.js```:
 
@@ -201,20 +201,6 @@ At this point we have functional, if basic, authentication in our Firebase app.
             <label for="loginPassword" class="col-sm-2 control-label">Password</label>
             <div class="col-sm-10">
               <input type="password" class="form-control" id="loginPassword" placeholder="Password">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Remember me
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-              <button type="submit" class="btn btn-default">Sign in</button>
             </div>
           </div>
         </form>
