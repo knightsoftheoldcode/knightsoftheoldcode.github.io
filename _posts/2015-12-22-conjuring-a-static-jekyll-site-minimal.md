@@ -2,6 +2,7 @@
 layout: post
 title:  "Conjuring a Static Jekyll Site - A Minimal Buildable Product"
 date:   2015-12-22
+author: tricorius
 description: “Conjuring a Static Website“
 series: conjuring-a-static-jekyll-site
 categories: article
