@@ -76,10 +76,6 @@ function checkDemoLogin() {
     var signupLabel = "Signup";
     var loginLabel = "Login";
     
-    if (loggedInUser) {
-        
-    }
-    
     signupButton.firstChild.data = signupLabel;
     loginButton.firstChild.data = loginLabel;
     

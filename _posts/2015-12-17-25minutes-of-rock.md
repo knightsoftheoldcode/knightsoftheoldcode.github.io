@@ -2,6 +2,7 @@
 layout: post
 title:  "25 Minutes of Rock"
 date:   2015-12-17
+author: tricorius
 description: "25 minutes of rock"
 series: 25m-of-rock
 categories: article

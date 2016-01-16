@@ -2,6 +2,7 @@
 layout: post
 title:  "Perfection is Iteration"
 date:   2015-12-15
+author: tricorius
 description: "perfection is iteration"
 categories: article
 tags:

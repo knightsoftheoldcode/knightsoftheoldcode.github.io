@@ -2,15 +2,16 @@
 layout: default
 ---
 {% for post in site.posts %}
-	<div class="row">
+	<article class="row">
 		<div class="col-md-12">
 			<h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h1>
 		</div>
 		<div class="col-md-12">
-			<p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</p>
+			<p class="post-meta">{% if post.author %}By {{ post.author | capitalize }}{% endif %} on {{ post.date | date: "%b %-d, %Y" }}</p>
 		</div>
 		<div class="col-md-12">
 			{{ post.content }}
 		</div>
-	</div>
+	</article>
+    <hr>
 {% endfor %}

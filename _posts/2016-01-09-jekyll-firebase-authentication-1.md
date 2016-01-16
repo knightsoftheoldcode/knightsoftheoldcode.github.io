@@ -2,6 +2,7 @@
 layout: post
 title:  "Jekyll and Firebase - Email / Password Authentication"
 date:   2016-01-09
+author: tricorius
 description: "Authentication in statically-generated websites with Jekyll and Firebase"
 series: jekyll-and-firebase
 categories: article
